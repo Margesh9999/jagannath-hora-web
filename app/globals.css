@@ -1,0 +1,182 @@
+/* 🌈 Pastel Vedic Theme - Color Palette */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Pastel Colors */
+  --saffron-50: #FFF8E1;
+  --saffron-100: #FFECB3;
+  --saffron-200: #FFE082;
+  --saffron-300: #FFD54F;
+  --saffron-400: #FFCA28;
+  --saffron-500: #FFC107;
+  --saffron-600: #FFB300;
+  --saffron-700: #FFA000;
+  --saffron-800: #FF8F00;
+  --saffron-900: #FF6F00;
+
+  --lotus-50: #FCE4EC;
+  --lotus-100: #F8BBD0;
+  --lotus-200: #F48FB1;
+  --lotus-300: #F06292;
+  --lotus-400: #EC407A;
+  --lotus-500: #E91E63;
+
+  --sandalwood-50: #FFF3E0;
+  --sandalwood-100: #FFE0B2;
+  --sandalwood-200: #FFCC80;
+  --sandalwood-300: #FFB74D;
+  --sandalwood-400: #FFA726;
+  --sandalwood-500: #FF9800;
+
+  --sacred-blue-50: #E3F2FD;
+  --sacred-blue-100: #BBDEFB;
+  --sacred-blue-200: #90CAF9;
+  --sacred-blue-300: #64B5F6;
+  --sacred-blue-400: #42A5F5;
+  --sacred-blue-500: #2196F3;
+
+  --turmeric-50: #FFFDE7;
+  --turmeric-100: #FFF59D;
+  --turmeric-200: #FFF176;
+  --turmeric-300: #FFEE58;
+  --turmeric-400: #FDD835;
+  --turmeric-500: #FBC02D;
+
+  --mint-50: #E0F2F1;
+  --mint-100: #B2DFDB;
+  --mint-200: #80CBC4;
+  --mint-300: #4DB6AC;
+  --mint-400: #26A69A;
+
+  --lavender-50: #EDE7F6;
+  --lavender-100: #D1C4E9;
+  --lavender-200: #B39DDB;
+  --lavender-300: #9575CD;
+  --lavender-400: #7E57C2;
+
+  /* Vedic Dark */
+  --vedic-dark: #37474F;
+  --vedic-gray: #607D8B;
+}
+
+body {
+  @apply bg-saffron-50 text-vedic-dark font-sans;
+}
+
+/* 🎨 Planetary Colors */
+.planet-sun { color: var(--sandalwood-400); }
+.planet-moon { color: var(--sacred-blue-300); }
+.planet-mars { color: var(--lotus-300); }
+.planet-mercury { color: var(--mint-300); }
+.planet-jupiter { color: var(--turmeric-400); }
+.planet-venus { color: var(--lotus-400); }
+.planet-saturn { color: var(--sacred-blue-300); }
+.planet-rahu { color: var(--sandalwood-700); }
+.planet-ketu { color: var(--vedic-gray); }
+
+/* 📊 Chart Styles */
+.chart-north-indian {
+  @apply aspect-square p-2;
+}
+
+.chart-south-indian {
+  @apply aspect-square p-2;
+}
+
+/* 🎯 Card Styles */
+.vedic-card {
+  @apply bg-white rounded-xl shadow-lg border border-saffron-100 overflow-hidden;
+}
+
+/* 🎨 Button Styles */
+.vedic-btn {
+  @apply px-6 py-2 rounded-lg font-medium transition-all duration-200 shadow-md;
+}
+
+.vedic-btn-primary {
+  @apply bg-saffron-600 text-white hover:bg-saffron-700 hover:shadow-lg;
+}
+
+.vedic-btn-secondary {
+  @apply bg-white text-vedic-dark border border-saffron-200 hover:bg-saffron-50;
+}
+
+/* 📈 Loading Animation */
+.vedic-loader {
+  @apply w-12 h-12 border-4 border-saffron-200 border-t-saffron-600 rounded-full animate-spin;
+}
+
+/* 📐 Chart Grid */
+.chart-grid {
+  @apply grid grid-cols-12 gap-1 w-full max-w-md mx-auto;
+}
+
+.chart-cell {
+  @apply aspect-square flex items-center justify-center text-xs md:text-sm font-medium rounded bg-white border border-saffron-100;
+}
+
+.chart-cell-occupied {
+  @apply bg-saffron-100 border-saffron-300;
+}
+
+/* 🌈 Pastel Chart Colors */
+.chart-color-aries { @apply bg-rose-100 border-rose-300 text-rose-800; }
+.chart-color-taurus { @apply bg-green-100 border-green-300 text-green-800; }
+.chart-color-gemini { @apply bg-lime-100 border-lime-300 text-lime-800; }
+.chart-color-cancer { @apply bg-blue-100 border-blue-300 text-blue-800; }
+.chart-color-leo { @apply bg-amber-100 border-amber-300 text-amber-800; }
+.chart-color-virgo { @apply bg-emerald-100 border-emerald-300 text-emerald-800; }
+.chart-color-libra { @apply bg-pink-100 border-pink-300 text-pink-800; }
+.chart-color-scorpio { @apply bg-red-100 border-red-300 text-red-800; }
+.chart-color-sagittarius { @apply bg-purple-100 border-purple-300 text-purple-800; }
+.chart-color-capricorn { @apply bg-slate-100 border-slate-300 text-slate-800; }
+.chart-color-aquarius { @apply bg-indigo-100 border-indigo-300 text-indigo-800; }
+.chart-color-pisces { @apply bg-teal-100 border-teal-300 text-teal-800; }
+
+/* 📊 Chart Styles */
+.chart-style-north {
+  @apply w-full max-w-md aspect-square mx-auto relative;
+}
+
+.chart-style-south {
+  @apply w-full max-w-md aspect-square mx-auto relative;
+}
+
+/* 🎨 Form Inputs */
+.form-input {
+  @apply w-full px-4 py-2 border border-saffron-200 rounded-lg focus:ring-2 focus:ring-saffron-400 focus:border-transparent;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-vedic-dark mb-1;
+}
+
+/* 📱 Responsive Utilities */
+@media (max-width: 640px) {
+  .chart-grid {
+    @apply grid-cols-4;
+  }
+  .chart-cell {
+    @apply text-xs;
+  }
+}
+
+/* 🖨️ Print / PDF Export */
+@media print {
+  header, footer, .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+  }
+  .vedic-card {
+    break-inside: avoid;
+    box-shadow: none !important;
+  }
+  main {
+    padding: 0 !important;
+  }
+}
+
