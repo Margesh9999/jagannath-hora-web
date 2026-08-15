@@ -4,9 +4,10 @@
   "description": "🌱 Free Vedic Astrology Platform - Replicating Jagannath Hora for the web",
   "scripts": {
     "dev": "next dev",
-    "build": "chmod +x node_modules/.bin/next && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "prepare": "chmod +x node_modules/.bin/next",
     "dev:backend": "cd backend/python && python -m uvicorn main:app --reload --port 8000",
     "dev:all": "concurrently -n web,api -c blue,magenta \"npm run dev\" \"npm run dev:backend\""
   },
