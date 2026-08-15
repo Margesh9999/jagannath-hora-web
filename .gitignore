@@ -3,6 +3,13 @@ node_modules
 /.pnp
 .pnp.js
 
+# Build outputs
+.next
+out
+
+# Large files - SWC binaries (if any slip through)
+node_modules/@next/swc-*/next-swc.win32-*-msvc.node
+
 # Testing
 /coverage
 
@@ -31,3 +38,5 @@ yarn-error.log*
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+.vercel
