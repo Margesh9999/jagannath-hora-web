@@ -4,7 +4,7 @@
   "description": "🌱 Free Vedic Astrology Platform - Replicating Jagannath Hora for the web",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node node_modules/.bin/next build",
     "start": "next start",
     "lint": "next lint",
     "prepare": "chmod +x node_modules/.bin/next",
